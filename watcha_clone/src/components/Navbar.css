@@ -1,22 +1,21 @@
-* {
+/** {
 	font-family: 'Noto Sans KR', sans-serif;
-}
+}*/
 
-.content {
+/*.content {
     margin-top: 100px;
-}
+}*/
 
-div {
+/*div {
     display: block;
-}
+}*/
 
-.Nav {
+/*.Nav {
     width: 100%;
     height: 62px;
     position: fixed;
     background-color: #ffffff;
     display: flex;
-    /*justify-content: space-between;*/
     align-items: center;
     box-shadow: rgb(0 0 0 / 8%) 0px 1px 0px 0px;
     margin: 0px;
@@ -27,25 +26,25 @@ div {
     padding: 0px;
     display: flex;
     overflow: hidden;
-}
+}*/
 
-.Nav img {
+./*Nav img {
     width: 151px;
     height: 29px;
-}
+}*/
 
-.Nav_title {
+/*.Nav_title {
     margin-left: 60px;
-}
+}*/
 
-.Nav_item {
+/* 얜 안쓰는 거 같은데 뭐지 */
+/*.Nav_item {
     display: flex;
     width: 100%;
-    /*justify-content: space-between;*/
     align-items: center;
-}
+}/
 
-ul {
+/*ul {
     list-style: none;
     padding: 0px;
     margin: 0px;
@@ -59,14 +58,14 @@ ul {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
-}
+}*/
 
-li {
+/*li {
     display: list-item;
     text-align: -webkit-match-parent;
-}
+}/
 
-button {
+/*button {
     writing-mode: horizontal-tb !important;
     text-rendering: auto;
     word-spacing: normal;
@@ -76,28 +75,29 @@ button {
     text-align: center;
     align-items: flex-start;
     box-sizing: border-box;
-}
+}*/
 
-.Nav_left {
+/*.Nav_left {
     display: flex;
     -webkit-box-align: center;
     align-items: center;
     margin: 0px 0px 0px 25px;
     flex-shrink: 0;
-}
-    /*text-decoration: none; 
+}*/
+    /*얘넨 원래도 주석처리 되어있던 코드
+    text-decoration: none; 
     display: flex;
     width: 100px;
     justify-content: space-between;
 }*/
 
-.Nav_right {
+/*.Nav_right {
     text-decoration: none;
     margin: 0px 0px 0px 25px;
     flex-shrink: 0;
-}
+}*/
 
-.Nav_right.search {
+/*.Nav_right.search {
     display: flex;
     -webkit-box-align: center;
     align-items: center;
@@ -105,7 +105,7 @@ button {
     flex-shrink: 1;
     margin: 0px 0px 0px auto;
     transition: all 0.5s ease 0s;
-}
+}*/
 
 @media (min-width: 860px) {
 .css-67pwm-NavList {
@@ -113,7 +113,7 @@ button {
 }
 }
 
-.movie {
+/*.movie {
     background: none;
     padding: 0px;
     border: none;
@@ -133,7 +133,7 @@ button {
     color: rgb(126, 126, 126);
     font-size: 15px;
     letter-spacing: -0.3px;
-}
+}*/
 
 @media (min-width: 860px) {
 .search_bar {
@@ -141,9 +141,8 @@ button {
     }
 }
 
-.search_bar {
+/*.search_bar {
     display: flex;
-    /*-webkit-box-align: center;*/
     line-height: 23px;
     font-size: 14px;
     background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMiIgaGVpZ2h0PSIyMiIgdmlld0JveD0iMCAwIDIyIDIyIj4KICAgIDxwYXRoIGZpbGw9IiNCQUJBQzMiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTkuODE0IDE1LjczNWMtMy4yMDcgMC01LjgxNy0yLjYzLTUuODE3LTUuODYxIDAtMy4yMzMgMi42MS01Ljg2MiA1LjgxNy01Ljg2MiAzLjIwNyAwIDUuODE4IDIuNjMgNS44MTggNS44NjJzLTIuNjEgNS44Ni01LjgxOCA1Ljg2bTkuODQxIDIuNTRsLTMuNjYtMy43MDRjLjk4LTEuMzEgMS41NzEtMi45MzIgMS41NzEtNC42OTYgMC00LjMwOC0zLjQ3OC03LjgxMi03Ljc1Mi03LjgxMi00LjI3NCAwLTcuNzUyIDMuNTA0LTcuNzUyIDcuODEyIDAgNC4zMDcgMy40NzggNy44MSA3Ljc1MiA3LjgxIDEuODI5IDAgMy41MDctLjY0NCA0LjgzNC0xLjcxNGwzLjYzNyAzLjY4Yy4xODIuMTg2LjQyNi4yODguNjg1LjI4OC4yNTcgMCAuNS0uMS42ODMtLjI4NC4xODItLjE4NC4yODQtLjQzLjI4NS0uNjkgMC0uMjYtLjEtLjUwNS0uMjgzLS42OSIvPgo8L3N2Zz4K) 9px 8px no-repeat rgb(245, 245, 247);
@@ -153,9 +152,9 @@ button {
     padding: 7px 10px 8px 36px;
     border-radius: 2px;
     border: none;
-}
+}*/
 
-.login {
+/*.login {
     cursor: pointer;
     background: transparent;
     color: rgb(116, 116, 123);
@@ -164,14 +163,14 @@ button {
     padding: 0px;
     border: 0px;
     margin: 15px 0px;
-}
+}*/
 
-.join {
+/*.join{
     cursor: pointer;
     text-align: center;
     border-radius: 6px;
     font-weight: 500; /* 얘 적용 안되고 있음 */
-    line-height: 20px;
+    /*line-height: 20px;
     box-sizing: border-box;
     width: auto;
     min-width: 72px;
@@ -183,4 +182,15 @@ button {
     padding: 5px 14px 6px;
     border: 1px solid rgba(116, 116, 123, 0.5);
     margin: 15px 120px 15px 0px;
-}
+}*/
+
+/*p{
+    color: #292a32;
+    font-size: 22px;
+    font-weight: 700;
+    -webkit-letter-spacing: -0.4px;
+    -moz-letter-spacing: -0.4px;
+    -ms-letter-spacing: -0.4px;
+    letter-spacing: -0.4px;
+    line-height: 30px;
+}*/
