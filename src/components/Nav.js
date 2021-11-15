@@ -11,12 +11,8 @@ const Nav = styled.nav`
   /*justify-content: space-between;*/
   align-items: center;
   box-shadow: rgb(0 0 0 / 8%) 0px 1px 0px 0px;
-  margin: 0px;
   top: 0;
-  left: 0;
-  right: 0;
   list-style: none;
-  padding: 0px;
   display: flex;
   overflow: hidden;
 `;
@@ -26,7 +22,6 @@ const Button = styled.button`
   writing-mode: horizontal-tb !important;
   text-rendering: auto;
   word-spacing: normal;
-  text-indent: 0px;
   text-shadow: none;
   display: inline-block;
   text-align: center;
@@ -47,9 +42,7 @@ const Movie = styled.button`
 
 const TvBook = styled.button`
   background: none;
-  padding: 0px;
   border: none;
-  margin: 0px;
   cursor: pointer;
   color: rgb(126, 126, 126);
   font-size: 15px;
@@ -62,8 +55,7 @@ const Login = styled.button`
   color: rgb(116, 116, 123);
   font-size: 14px;
   letter-spacing: -0.3px;
-  padding: 0px;
-  border: 0px;
+  border: none;
   margin: 15px 0px;
 `;
 
@@ -87,8 +79,6 @@ const Join = styled.button`
 `;
 const NavBody = styled.ul`
   list-style: none;
-  padding: 0px;
-  margin: 0px;
   width: 100%;
   height: 62px;
   display: flex;
@@ -96,8 +86,6 @@ const NavBody = styled.ul`
   align-items: center;
   margin-block-start: 1em;
   margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
   padding-inline-start: 40px;
 `;
 
@@ -164,9 +152,6 @@ const StyledP = styled.p`
   font-size: 22px;
   font-weight: 700;
   margin-left: 60px;
-  -webkit-letter-spacing: -0.4px;
-  -moz-letter-spacing: -0.4px;
-  -ms-letter-spacing: -0.4px;
   letter-spacing: -0.4px;
   line-height: 30px;
 `;
@@ -187,84 +172,77 @@ const Poster = styled.div`
 const detail = styled.div``;
 
 // list 버전
-class Navbar extends Component {
-  render() {
-    return (
-      <div id="container">
-        <GlobalStyle />
-        <header>
-          <Nav>
-            <NavBody>
-              <NavTitle>
-                <img
-                  src={require("../img/watcha_logo.PNG").default}
-                  alt="logo"
-                />
-              </NavTitle>
-              <LeftMenu>
-                <Movie>영화</Movie>
-              </LeftMenu>
-              <LeftMenu>
-                <TvBook>TV 프로그램</TvBook>
-              </LeftMenu>
-              <LeftMenu>
-                <TvBook>책</TvBook>
-              </LeftMenu>
-              <Input>
-                <SearchBar
-                  type="text"
-                  placeholder="콘텐츠, 인물, 컬렉션, 유저를 검색해보세요."
-                />
-              </Input>
-              <RightMenu>
-                <Login>로그인</Login>
-              </RightMenu>
-              <RightMenu>
-                <Join>회원가입</Join>
-              </RightMenu>
-            </NavBody>
-          </Nav>
-        </header>
+const Navbar = () => (
+  <div id="container">
+    <GlobalStyle />
+    <header>
+      <Nav>
+        <NavBody>
+          <NavTitle>
+            <img src={require("../img/watcha_logo.PNG").default} alt="logo" />
+          </NavTitle>
+          <LeftMenu>
+            <Movie>영화</Movie>
+          </LeftMenu>
+          <LeftMenu>
+            <TvBook>TV 프로그램</TvBook>
+          </LeftMenu>
+          <LeftMenu>
+            <TvBook>책</TvBook>
+          </LeftMenu>
+          <Input>
+            <SearchBar
+              type="text"
+              placeholder="콘텐츠, 인물, 컬렉션, 유저를 검색해보세요."
+            />
+          </Input>
+          <RightMenu>
+            <Login>로그인</Login>
+          </RightMenu>
+          <RightMenu>
+            <Join>회원가입</Join>
+          </RightMenu>
+        </NavBody>
+      </Nav>
+    </header>
 
-        <Content>
-          <div className="firstbox">
-            <div className="firstbox title">
-              <StyledP className="boxoffice">박스오피스 순위</StyledP>
-            </div>
-            <div className="firstbox scroll">
-              <div className="firstbox movies">
-                <ul className="firstbox list">
-                  <Box>
-                    <a title="이터널스" href="링크">
-                      <Poster>
-                        <img
-                          src={require("../img/dune_poster.jpg").default}
-                          alt="dune_poster"
-                        />
-                      </Poster>
-                      <detail>포스터 밑 글자부분</detail>
-                    </a>
-                  </Box>
-                </ul>
-              </div>
-            </div>
+    <Content>
+      <div className="firstbox">
+        <div className="firstbox title">
+          <StyledP className="boxoffice">박스오피스 순위</StyledP>
+        </div>
+        <div className="firstbox scroll">
+          <div className="firstbox movies">
+            <ul className="firstbox list">
+              <Box>
+                <a title="이터널스" href="링크">
+                  <Poster>
+                    <img
+                      src={require("../img/dune_poster.jpg").default}
+                      alt="dune_poster"
+                    />
+                  </Poster>
+                  <detail>포스터 밑 글자부분</detail>
+                </a>
+              </Box>
+            </ul>
           </div>
-          <div className="secondbox">
-            <div className="secondbox title">
-              <StyledP>왓챠 영화 순위</StyledP>
-            </div>
-            <div className="firstbox movies"></div>
-          </div>
-          <div className="thridbox">
-            <div className="thridbox title">
-              <StyledP>어쩌구 머시기 순위</StyledP>
-            </div>
-            <div className="firstbox movies"></div>
-          </div>
-        </Content>
+        </div>
       </div>
-    );
-  }
-}
+      <div className="secondbox">
+        <div className="secondbox title">
+          <StyledP>왓챠 영화 순위</StyledP>
+        </div>
+        <div className="firstbox movies"></div>
+      </div>
+      <div className="thridbox">
+        <div className="thridbox title">
+          <StyledP>어쩌구 머시기 순위</StyledP>
+        </div>
+        <div className="firstbox movies"></div>
+      </div>
+    </Content>
+  </div>
+);
 
 export default Navbar;
