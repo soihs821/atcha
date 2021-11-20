@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.css";
 // import Navbar from "./components/Navbar";
-import Nav from "./components/Nav";
+import Movie from "./components/Movie";
 
 const App = () => {
-  return <Nav />;
+  return <Movie />;
 };
 
 export default App;

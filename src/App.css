@@ -9,12 +9,12 @@
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  src: url("fonts/NotoSansKR-Regular.otf") format('truetype');
+  src: url("fonts/NotoSansKR-Medium.otf") format('truetype');
 }
 
 @font-face {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/NotoSansKR-Regular.otf") format('truetype');
+  src: url("fonts/NotoSansKR-Bold.otf") format('truetype');
 }
