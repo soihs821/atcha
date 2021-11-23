@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import GlobalStyle from "./GlobalStyle";
 
 const FooterTop = styled.div`
   background-color: #101113;
@@ -120,11 +119,13 @@ const FooterLogo = styled.img`
   height: 25px;
 `;
 
-const FooterRight = styled.div``;
+/*const FooterRight = styled.div`
+  display: block;
+  text-align: right;
+`;
 
 const LanguageBox = styled.div`
   text-align: right;
-  display: block;
 `;
 
 const Language = styled.select`
@@ -157,7 +158,19 @@ const SNS = styled.ul`
   justify-content: flex-end;
   align-items: center;
   margin: 99px 0 -4px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
 `;
+
+const SNSItem = styled.li``;
+
+const SNSLink = styled.a``;
+
+const SNSImage = styled.img``;
+*/
 
 const Footer = () => (
   <footer>
@@ -212,14 +225,30 @@ const Footer = () => (
             <LeftItemC>© 2021 by ATCHA, Inc. All rights reserved.</LeftItemC>
           </LeftLineC1>
         </FooterLeft>
-        <FooterRight>
+
+        {/*<FooterRight>
           <LanguageBox>
             <Language value={"1"}>
               <option value="1">한국어</option>
             </Language>
           </LanguageBox>
-          <SNS></SNS>
-        </FooterRight>
+          <SNS>
+            <SNSItem>
+              <SNSLink
+                href="https://www.instagram.com/yyyvvi_/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <SNSImage
+                  src={require("../img/instagram.png").default}
+                  alt="instagram"
+                />
+              </SNSLink>
+            </SNSItem>
+            <SNSItem></SNSItem>
+            <SNSItem></SNSItem>
+          </SNS>
+        </FooterRight>*/}
       </BottomContent>
     </FooterBottom>
   </footer>

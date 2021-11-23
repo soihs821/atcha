@@ -156,7 +156,7 @@ const Ratio = styled.div`
   margin-top: 3px;
 `;
 // list 버전
-const Navbar = () => (
+const Movie = () => (
   <div id="container">
     <GlobalStyle />
     <Header />
@@ -480,4 +480,4 @@ const Navbar = () => (
   </div>
 );
 
-export default Navbar;
+export default Movie;

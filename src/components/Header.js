@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import GlobalStyle from "./GlobalStyle";
+import { useNavigate, Link } from "react-router-dom";
 
 const Nav = styled.nav`
   width: 100%;
@@ -15,18 +15,6 @@ const Nav = styled.nav`
   list-style: none;
   display: flex;
   overflow: hidden;
-`;
-
-// 얘 어떻게 하지 .. ?
-const Button = styled.button`
-  writing-mode: horizontal-tb !important;
-  text-rendering: auto;
-  word-spacing: normal;
-  text-shadow: none;
-  display: inline-block;
-  text-align: center;
-  align-items: flex-start;
-  box-sizing: border-box;
 `;
 
 const Movie = styled.button`
@@ -148,37 +136,39 @@ const SearchBar = styled.input`
     }
 }*/
 
-const Header = () => (
-  <header>
-    <Nav>
-      <NavBody>
-        <NavTitle>
-          <img src={require("../img/atcha_logo.png").default} alt="logo" />
-        </NavTitle>
-        <LeftMenu>
-          <Movie>영화</Movie>
-        </LeftMenu>
-        <LeftMenu>
-          <TvBook>TV 프로그램</TvBook>
-        </LeftMenu>
-        <LeftMenu>
-          <TvBook>책</TvBook>
-        </LeftMenu>
-        <Input>
-          <SearchBar
-            type="text"
-            placeholder="콘텐츠, 인물, 컬렉션, 유저를 검색해보세요."
-          />
-        </Input>
-        <RightMenu>
-          <Login>로그인</Login>
-        </RightMenu>
-        <RightMenu>
-          <Join>회원가입</Join>
-        </RightMenu>
-      </NavBody>
-    </Nav>
-  </header>
-);
+const Header = () => {
+  return (
+    <header>
+      <Nav>
+        <NavBody>
+          <NavTitle>
+            <img src={require("../img/atcha_logo.png").default} alt="logo" />
+          </NavTitle>
+          <LeftMenu>
+            <Movie>영화</Movie>
+          </LeftMenu>
+          <LeftMenu>
+            <TvBook>TV 프로그램</TvBook>
+          </LeftMenu>
+          <LeftMenu>
+            <TvBook>책</TvBook>
+          </LeftMenu>
+          <Input>
+            <SearchBar
+              type="text"
+              placeholder="콘텐츠, 인물, 컬렉션, 유저를 검색해보세요."
+            />
+          </Input>
+          <RightMenu>
+            <Login>로그인</Login>
+          </RightMenu>
+          <RightMenu>
+            <Join>회원가입</Join>
+          </RightMenu>
+        </NavBody>
+      </Nav>
+    </header>
+  );
+};
 
 export default Header;
