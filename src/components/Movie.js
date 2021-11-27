@@ -156,328 +156,326 @@ const Ratio = styled.div`
   margin-top: 3px;
 `;
 // list 버전
-const Movie = () => (
-  <div id="container">
-    <GlobalStyle />
-    <Header />
+const Movie = () => {
+  return (
+    <div id="container">
+      <GlobalStyle />
+      <Header />
 
-    <Content>
-      <Container>
-        <StyledP>박스오피스 순위</StyledP>
-        <MultiBox>
-          <Box>
-            <SingleBox title="듄" href="링크">
-              <PosterBox>
-                <Poster>
-                  <Image
-                    src={require("../img/dune_poster.jpg").default}
-                    alt="dune_poster"
-                  />
-                </Poster>
-                <RankBox>1</RankBox>
-              </PosterBox>
-              <Detail>
-                <Name>듄</Name>
-                <Country>2021 ・ 미국</Country>
-                <Star>평균★3.9</Star>
-                <Ratio>예매율 8.8% ・ 누적 관객 127만명</Ratio>
-              </Detail>
-            </SingleBox>
-          </Box>
-          <Box>
-            <SingleBox title="디어에반핸슨" href="링크">
-              <PosterBox>
-                <Poster>
-                  <Image
-                    src={require("../img/디어에반핸슨_poster.jpg").default}
-                    alt="dearevanhansen_poster"
-                  />
-                </Poster>
-                <RankBox>2</RankBox>
-              </PosterBox>
+      <Content>
+        <Container>
+          <StyledP>박스오피스 순위</StyledP>
+          <MultiBox>
+            <Box>
+              <SingleBox title="엔칸토" href="링크">
+                <PosterBox>
+                  <Poster>
+                    <Image
+                      src={require("../img/엔칸토_poster.jpg").default}
+                      alt="엔칸토_poster"
+                    />
+                  </Poster>
+                  <RankBox>1</RankBox>
+                </PosterBox>
+                <Detail>
+                  <Name>엔칸토: 마법의 세계</Name>
+                  <Country>2021 ・ 미국</Country>
+                  <Star>평균★3.5</Star>
+                  <Ratio>예매율 19% ・ 누적 관객 10만명</Ratio>
+                </Detail>
+              </SingleBox>
+            </Box>
+            <Box>
+              <SingleBox title="유체이탈자" href="링크">
+                <PosterBox>
+                  <Poster>
+                    <Image
+                      src={require("../img/유체이탈자_poster.jpg").default}
+                      alt="유체이탈자_poster"
+                    />
+                  </Poster>
+                  <RankBox>2</RankBox>
+                </PosterBox>
 
-              <Detail>
-                <Name>디어 에반 핸슨</Name>
-                <Country>2021 ・ 미국</Country>
-                <Star>평균★3.0</Star>
-                <Ratio>예매율 4% ・ 누적 관객 4만명</Ratio>
-              </Detail>
-            </SingleBox>
-          </Box>
-          <Box>
-            <SingleBox title="이터널스" href="링크">
-              <PosterBox>
-                <Poster>
-                  <Image
-                    src={require("../img/eternals_poster.jpg").default}
-                    alt="eternals_poster"
-                  />
-                </Poster>
-                <RankBox>3</RankBox>
-              </PosterBox>
+                <Detail>
+                  <Name>유체이탈자</Name>
+                  <Country>2019 ・ 한국</Country>
+                  <Star>평균★2.8</Star>
+                  <Ratio>예매율 16% ・ 누적 관객 17만명</Ratio>
+                </Detail>
+              </SingleBox>
+            </Box>
+            <Box>
+              <SingleBox title="듄" href="링크">
+                <PosterBox>
+                  <Poster>
+                    <Image
+                      src={require("../img/dune_poster.jpg").default}
+                      alt="dune_poster"
+                    />
+                  </Poster>
+                  <RankBox>3</RankBox>
+                </PosterBox>
 
-              <Detail>
-                <Name>이터널스</Name>
-                <Country>2021 ・ 미국</Country>
-                <Star>평균★3.1</Star>
-                <Ratio>예매율 13% ・ 누적 관객 268만명</Ratio>
-              </Detail>
-            </SingleBox>
-          </Box>
-          <Box>
-            <SingleBox title="유체이탈자" href="링크">
-              <PosterBox>
-                <Poster>
-                  <Image
-                    src={require("../img/유체이탈자_poster.jpg").default}
-                    alt="유체이탈자_poster"
-                  />
-                </Poster>
-                <RankBox>4</RankBox>
-              </PosterBox>
+                <Detail>
+                  <Name>듄</Name>
+                  <Country>2021 ・ 미국</Country>
+                  <Star>평균★3.9</Star>
+                  <Ratio>예매율 13% ・ 누적 관객 139만명</Ratio>
+                </Detail>
+              </SingleBox>
+            </Box>
+            <Box>
+              <SingleBox title="연애빠진로맨스" href="링크">
+                <PosterBox>
+                  <Poster>
+                    <Image
+                      src={require("../img/연애빠진로맨스_poster.jpg").default}
+                      alt="연애빠진로맨스_poster"
+                    />
+                  </Poster>
+                  <RankBox>4</RankBox>
+                </PosterBox>
 
-              <Detail>
-                <Name>유체이탈자</Name>
-                <Country>2019 ・ 한국</Country>
-                <Ratio>예매율 11% ・ 누적 관객 4,441명</Ratio>
-              </Detail>
-            </SingleBox>
-          </Box>
-          <Box>
-            <SingleBox title="장르만로맨스" href="링크">
-              <PosterBox>
-                <Poster>
-                  <Image
-                    src={require("../img/장르만로맨스_poster.jpg").default}
-                    alt="장르만로맨스_poster"
-                  />
-                </Poster>
-                <RankBox>5</RankBox>
-              </PosterBox>
+                <Detail>
+                  <Name>연애 빠진 로맨스</Name>
+                  <Country>2021 ・ 한국</Country>
+                  <Star>평균★3.3</Star>
+                  <Ratio>예매율 10% ・ 누적 관객 10만명</Ratio>
+                </Detail>
+              </SingleBox>
+            </Box>
+            <Box>
+              <SingleBox title="장르만로맨스" href="링크">
+                <PosterBox>
+                  <Poster>
+                    <Image
+                      src={require("../img/장르만로맨스_poster.jpg").default}
+                      alt="장르만로맨스_poster"
+                    />
+                  </Poster>
+                  <RankBox>5</RankBox>
+                </PosterBox>
 
-              <Detail>
-                <Name>장르만 로맨스</Name>
-                <Country>2021 ・ 한국</Country>
-                <Star>평균★3.0</Star>
-                <Ratio>예매율 15% ・ 누적 관객 15만명</Ratio>
-              </Detail>
-            </SingleBox>
-          </Box>
-        </MultiBox>
-      </Container>
+                <Detail>
+                  <Name>장르만 로맨스</Name>
+                  <Country>2021 ・ 한국</Country>
+                  <Star>평균★3.0</Star>
+                  <Ratio>예매율 15% ・ 누적 관객 15만명</Ratio>
+                </Detail>
+              </SingleBox>
+            </Box>
+          </MultiBox>
+        </Container>
 
-      <Container>
-        <StyledP>왓챠 영화 순위</StyledP>
-        <MultiBox>
-          <Box>
-            <SingleBox title="듄" href="링크">
-              <PosterBox>
-                <Poster>
-                  <Image
-                    src={require("../img/dune_poster.jpg").default}
-                    alt="dune_poster"
-                  />
-                </Poster>
-                <RankBox>1</RankBox>
-              </PosterBox>
+        <Container>
+          <StyledP>앗챠 영화 순위</StyledP>
+          <MultiBox>
+            <Box>
+              <SingleBox title="해리포터와 마법사의 돌" href="링크">
+                <PosterBox>
+                  <Poster>
+                    <Image
+                      src={require("../img/rockofwizard_poster.jpg").default}
+                      alt="rockofwizard_poster"
+                    />
+                  </Poster>
+                  <RankBox>1</RankBox>
+                </PosterBox>
 
-              <Detail>
-                <Name>듄</Name>
-                <Country>2021 ・ 한국</Country>
-                <Star>평균★3.0</Star>
-                <Ratio>예매율 18% ・ 누적 관객 1만명</Ratio>
-              </Detail>
-            </SingleBox>
-          </Box>
-          <Box>
-            <SingleBox title="듄" href="링크">
-              <PosterBox>
-                <Poster>
-                  <Image
-                    src={require("../img/dune_poster.jpg").default}
-                    alt="dune_poster"
-                  />
-                </Poster>
-                <RankBox>2</RankBox>
-              </PosterBox>
+                <Detail>
+                  <Name>해리포터와 마법사의 돌</Name>
+                  <Country>2001 ・ 영국</Country>
+                  <Star>평균★4.3</Star>
+                </Detail>
+              </SingleBox>
+            </Box>
+            <Box>
+              <SingleBox title="해리포터와 비밀의 방" href="링크">
+                <PosterBox>
+                  <Poster>
+                    <Image
+                      src={require("../img/secretroom_poster.jpg").default}
+                      alt="secretroom_poster"
+                    />
+                  </Poster>
+                  <RankBox>2</RankBox>
+                </PosterBox>
 
-              <Detail>
-                <Name>듄</Name>
-                <Country>2021 ・ 한국</Country>
-                <Star>평균★3.0</Star>
-                <Ratio>예매율 18% ・ 누적 관객 1만명</Ratio>
-              </Detail>
-            </SingleBox>
-          </Box>
-          <Box>
-            <SingleBox title="듄" href="링크">
-              <PosterBox>
-                <Poster>
-                  <Image
-                    src={require("../img/dune_poster.jpg").default}
-                    alt="dune_poster"
-                  />
-                </Poster>
-                <RankBox>3</RankBox>
-              </PosterBox>
+                <Detail>
+                  <Name>해리포터와 비밀의 방</Name>
+                  <Country>2002 ・ 영국</Country>
+                  <Star>평균★4.1</Star>
+                </Detail>
+              </SingleBox>
+            </Box>
+            <Box>
+              <SingleBox title="해리포터와 불의 잔" href="링크">
+                <PosterBox>
+                  <Poster>
+                    <Image
+                      src={require("../img/glassoffire_poster.jpg").default}
+                      alt="glassoffire_poster"
+                    />
+                  </Poster>
+                  <RankBox>3</RankBox>
+                </PosterBox>
 
-              <Detail>
-                <Name>듄</Name>
-                <Country>2021 ・ 한국</Country>
-                <Star>평균★3.0</Star>
-                <Ratio>예매율 18% ・ 누적 관객 1만명</Ratio>
-              </Detail>
-            </SingleBox>
-          </Box>
-          <Box>
-            <SingleBox title="듄" href="링크">
-              <PosterBox>
-                <Poster>
-                  <Image
-                    src={require("../img/dune_poster.jpg").default}
-                    alt="dune_poster"
-                  />
-                </Poster>
-                <RankBox>4</RankBox>
-              </PosterBox>
+                <Detail>
+                  <Name>해리포터와 불의 잔</Name>
+                  <Country>2005 ・ 영국</Country>
+                  <Star>평균★4.0</Star>
+                </Detail>
+              </SingleBox>
+            </Box>
+            <Box>
+              <SingleBox title="해리포터와 아즈카반의 죄수" href="링크">
+                <PosterBox>
+                  <Poster>
+                    <Image
+                      src={require("../img/아즈카반의죄수_poster.jpg").default}
+                      alt="아즈카반의죄수_poster"
+                    />
+                  </Poster>
+                  <RankBox>4</RankBox>
+                </PosterBox>
 
-              <Detail>
-                <Name>듄</Name>
-                <Country>2021 ・ 한국</Country>
-                <Star>평균★3.0</Star>
-                <Ratio>예매율 18% ・ 누적 관객 1만명</Ratio>
-              </Detail>
-            </SingleBox>
-          </Box>
-          <Box>
-            <SingleBox title="듄" href="링크">
-              <PosterBox>
-                <Poster>
-                  <Image
-                    src={require("../img/dune_poster.jpg").default}
-                    alt="dune_poster"
-                  />
-                </Poster>
-                <RankBox>5</RankBox>
-              </PosterBox>
+                <Detail>
+                  <Name>해리포터와 아즈카반의 죄수</Name>
+                  <Country>2004 ・ 영국</Country>
+                  <Star>평균★4.1</Star>
+                </Detail>
+              </SingleBox>
+            </Box>
+            <Box>
+              <SingleBox title="해리포터와 혼혈왕자" href="링크">
+                <PosterBox>
+                  <Poster>
+                    <Image
+                      src={require("../img/혼혈왕자_poster.jpg").default}
+                      alt="혼혈왕자_poster"
+                    />
+                  </Poster>
+                  <RankBox>5</RankBox>
+                </PosterBox>
 
-              <Detail>
-                <Name>듄</Name>
-                <Country>2021 ・ 한국</Country>
-                <Star>평균★3.0</Star>
-                <Ratio>예매율 18% ・ 누적 관객 1만명</Ratio>
-              </Detail>
-            </SingleBox>
-          </Box>
-        </MultiBox>
-      </Container>
+                <Detail>
+                  <Name>해리포터와 혼혈왕자</Name>
+                  <Country>2009 ・ 영국</Country>
+                  <Star>평균★3.9</Star>
+                </Detail>
+              </SingleBox>
+            </Box>
+          </MultiBox>
+        </Container>
 
-      <Container>
-        <StyledP>어쩌구 머시기 순위</StyledP>
-        <MultiBox>
-          <Box>
-            <SingleBox title="듄" href="링크">
-              <PosterBox>
-                <Poster>
-                  <Image
-                    src={require("../img/dune_poster.jpg").default}
-                    alt="dune_poster"
-                  />
-                </Poster>
-                <RankBox>1</RankBox>
-              </PosterBox>
-              <Detail>
-                <Name>듄</Name>
-                <Country>2021 ・ 미국</Country>
-                <Star>평균★3.9</Star>
-                <Ratio>예매율 8.8% ・ 누적 관객 127만명</Ratio>
-              </Detail>
-            </SingleBox>
-          </Box>
-          <Box>
-            <SingleBox title="디어에반핸슨" href="링크">
-              <PosterBox>
-                <Poster>
-                  <Image
-                    src={require("../img/디어에반핸슨_poster.jpg").default}
-                    alt="dearevanhansen_poster"
-                  />
-                </Poster>
-                <RankBox>2</RankBox>
-              </PosterBox>
+        <Container>
+          <StyledP>어쩌구 머시기 순위</StyledP>
+          <MultiBox>
+            <Box>
+              <SingleBox title="듄" href="링크">
+                <PosterBox>
+                  <Poster>
+                    <Image
+                      src={require("../img/dune_poster.jpg").default}
+                      alt="dune_poster"
+                    />
+                  </Poster>
+                  <RankBox>1</RankBox>
+                </PosterBox>
+                <Detail>
+                  <Name>듄</Name>
+                  <Country>2021 ・ 미국</Country>
+                  <Star>평균★3.9</Star>
+                  <Ratio>예매율 8.8% ・ 누적 관객 127만명</Ratio>
+                </Detail>
+              </SingleBox>
+            </Box>
+            <Box>
+              <SingleBox title="디어에반핸슨" href="링크">
+                <PosterBox>
+                  <Poster>
+                    <Image
+                      src={require("../img/디어에반핸슨_poster.jpg").default}
+                      alt="dearevanhansen_poster"
+                    />
+                  </Poster>
+                  <RankBox>2</RankBox>
+                </PosterBox>
 
-              <Detail>
-                <Name>디어 에반 핸슨</Name>
-                <Country>2021 ・ 미국</Country>
-                <Star>평균★3.0</Star>
-                <Ratio>예매율 4% ・ 누적 관객 4만명</Ratio>
-              </Detail>
-            </SingleBox>
-          </Box>
-          <Box>
-            <SingleBox title="이터널스" href="링크">
-              <PosterBox>
-                <Poster>
-                  <Image
-                    src={require("../img/eternals_poster.jpg").default}
-                    alt="eternals_poster"
-                  />
-                </Poster>
-                <RankBox>3</RankBox>
-              </PosterBox>
+                <Detail>
+                  <Name>디어 에반 핸슨</Name>
+                  <Country>2021 ・ 미국</Country>
+                  <Star>평균★3.0</Star>
+                  <Ratio>예매율 4% ・ 누적 관객 4만명</Ratio>
+                </Detail>
+              </SingleBox>
+            </Box>
+            <Box>
+              <SingleBox title="이터널스" href="링크">
+                <PosterBox>
+                  <Poster>
+                    <Image
+                      src={require("../img/eternals_poster.jpg").default}
+                      alt="eternals_poster"
+                    />
+                  </Poster>
+                  <RankBox>3</RankBox>
+                </PosterBox>
 
-              <Detail>
-                <Name>이터널스</Name>
-                <Country>2021 ・ 미국</Country>
-                <Star>평균★3.1</Star>
-                <Ratio>예매율 13% ・ 누적 관객 268만명</Ratio>
-              </Detail>
-            </SingleBox>
-          </Box>
-          <Box>
-            <SingleBox title="유체이탈자" href="링크">
-              <PosterBox>
-                <Poster>
-                  <Image
-                    src={require("../img/유체이탈자_poster.jpg").default}
-                    alt="유체이탈자_poster"
-                  />
-                </Poster>
-                <RankBox>4</RankBox>
-              </PosterBox>
+                <Detail>
+                  <Name>이터널스</Name>
+                  <Country>2021 ・ 미국</Country>
+                  <Star>평균★3.1</Star>
+                  <Ratio>예매율 13% ・ 누적 관객 268만명</Ratio>
+                </Detail>
+              </SingleBox>
+            </Box>
+            <Box>
+              <SingleBox title="유체이탈자" href="링크">
+                <PosterBox>
+                  <Poster>
+                    <Image
+                      src={require("../img/유체이탈자_poster.jpg").default}
+                      alt="유체이탈자_poster"
+                    />
+                  </Poster>
+                  <RankBox>4</RankBox>
+                </PosterBox>
 
-              <Detail>
-                <Name>유체이탈자</Name>
-                <Country>2019 ・ 한국</Country>
-                <Ratio>예매율 11% ・ 누적 관객 4,441명</Ratio>
-              </Detail>
-            </SingleBox>
-          </Box>
-          <Box>
-            <SingleBox title="장르만로맨스" href="링크">
-              <PosterBox>
-                <Poster>
-                  <Image
-                    src={require("../img/장르만로맨스_poster.jpg").default}
-                    alt="장르만로맨스_poster"
-                  />
-                </Poster>
-                <RankBox>5</RankBox>
-              </PosterBox>
+                <Detail>
+                  <Name>유체이탈자</Name>
+                  <Country>2019 ・ 한국</Country>
+                  <Ratio>예매율 11% ・ 누적 관객 4,441명</Ratio>
+                </Detail>
+              </SingleBox>
+            </Box>
+            <Box>
+              <SingleBox title="장르만로맨스" href="링크">
+                <PosterBox>
+                  <Poster>
+                    <Image
+                      src={require("../img/장르만로맨스_poster.jpg").default}
+                      alt="장르만로맨스_poster"
+                    />
+                  </Poster>
+                  <RankBox>5</RankBox>
+                </PosterBox>
 
-              <Detail>
-                <Name>장르만 로맨스</Name>
-                <Country>2021 ・ 한국</Country>
-                <Star>평균★3.0</Star>
-                <Ratio>예매율 15% ・ 누적 관객 15만명</Ratio>
-              </Detail>
-            </SingleBox>
-          </Box>
-        </MultiBox>
-      </Container>
-    </Content>
-    <Footer />
-  </div>
-);
+                <Detail>
+                  <Name>장르만 로맨스</Name>
+                  <Country>2021 ・ 한국</Country>
+                  <Star>평균★3.0</Star>
+                  <Ratio>예매율 15% ・ 누적 관객 15만명</Ratio>
+                </Detail>
+              </SingleBox>
+            </Box>
+          </MultiBox>
+        </Container>
+      </Content>
+      <Footer />
+    </div>
+  );
+};
 
 export default Movie;

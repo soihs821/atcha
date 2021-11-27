@@ -163,103 +163,99 @@ const Tvprogram = () => (
 
     <Content>
       <Container>
-        <StyledP>박스오피스 순위</StyledP>
+        <StyledP>한국 TV 프로그램 인기 순위</StyledP>
         <MultiBox>
           <Box>
-            <SingleBox title="듄" href="링크">
+            <SingleBox title="지옥" href="링크">
               <PosterBox>
                 <Poster>
                   <Image
-                    src={require("../img/dune_poster.jpg").default}
-                    alt="dune_poster"
+                    src={require("../img/지옥_poster.jpg").default}
+                    alt="지옥_poster"
                   />
                 </Poster>
                 <RankBox>1</RankBox>
               </PosterBox>
               <Detail>
-                <Name>듄</Name>
-                <Country>2021 ・ 미국</Country>
-                <Star>평균★3.9</Star>
-                <Ratio>예매율 8.8% ・ 누적 관객 127만명</Ratio>
+                <Name>지옥</Name>
+                <Country>2021 ・ 한국 ・ Netflix</Country>
+                <Star>평균★3.3</Star>
               </Detail>
             </SingleBox>
           </Box>
           <Box>
-            <SingleBox title="디어에반핸슨" href="링크">
+            <SingleBox title="오징어게임" href="링크">
               <PosterBox>
                 <Poster>
                   <Image
-                    src={require("../img/디어에반핸슨_poster.jpg").default}
-                    alt="dearevanhansen_poster"
+                    src={require("../img/오징어게임_poster.jpg").default}
+                    alt="오징어게임_poster"
                   />
                 </Poster>
                 <RankBox>2</RankBox>
               </PosterBox>
 
               <Detail>
-                <Name>디어 에반 핸슨</Name>
-                <Country>2021 ・ 미국</Country>
-                <Star>평균★3.0</Star>
-                <Ratio>예매율 4% ・ 누적 관객 4만명</Ratio>
+                <Name>오징어 게임</Name>
+                <Country>2021 ・ 한국 ・ Netflix</Country>
+                <Star>평균★3.2</Star>
               </Detail>
             </SingleBox>
           </Box>
           <Box>
-            <SingleBox title="이터널스" href="링크">
+            <SingleBox title="마이네임" href="링크">
               <PosterBox>
                 <Poster>
                   <Image
-                    src={require("../img/eternals_poster.jpg").default}
-                    alt="eternals_poster"
+                    src={require("../img/마이네임_poster.jpg").default}
+                    alt="마이네임_poster"
                   />
                 </Poster>
                 <RankBox>3</RankBox>
               </PosterBox>
 
               <Detail>
-                <Name>이터널스</Name>
-                <Country>2021 ・ 미국</Country>
-                <Star>평균★3.1</Star>
-                <Ratio>예매율 13% ・ 누적 관객 268만명</Ratio>
+                <Name>마이 네임</Name>
+                <Country>2021 ・ 한국 ・ Netflix</Country>
+                <Star>평균★3.2</Star>
               </Detail>
             </SingleBox>
           </Box>
           <Box>
-            <SingleBox title="유체이탈자" href="링크">
+            <SingleBox title="구경이" href="링크">
               <PosterBox>
                 <Poster>
                   <Image
-                    src={require("../img/유체이탈자_poster.jpg").default}
-                    alt="유체이탈자_poster"
+                    src={require("../img/구경이_poster.jpg").default}
+                    alt="구경이_poster"
                   />
                 </Poster>
                 <RankBox>4</RankBox>
               </PosterBox>
 
               <Detail>
-                <Name>유체이탈자</Name>
-                <Country>2019 ・ 한국</Country>
-                <Ratio>예매율 11% ・ 누적 관객 4,441명</Ratio>
+                <Name>구경이</Name>
+                <Country>2021 ・ 한국 ・ Netflix</Country>
+                <Star>평균★4.1</Star>
               </Detail>
             </SingleBox>
           </Box>
           <Box>
-            <SingleBox title="장르만로맨스" href="링크">
+            <SingleBox title="해피니스" href="링크">
               <PosterBox>
                 <Poster>
                   <Image
-                    src={require("../img/장르만로맨스_poster.jpg").default}
-                    alt="장르만로맨스_poster"
+                    src={require("../img/해피니스_poster.jpg").default}
+                    alt="해피니스_poster"
                   />
                 </Poster>
                 <RankBox>5</RankBox>
               </PosterBox>
 
               <Detail>
-                <Name>장르만 로맨스</Name>
-                <Country>2021 ・ 한국</Country>
-                <Star>평균★3.0</Star>
-                <Ratio>예매율 15% ・ 누적 관객 15만명</Ratio>
+                <Name>해피니스</Name>
+                <Country>2021 ・ 한국 ・ tvN</Country>
+                <Star>평균★3.6</Star>
               </Detail>
             </SingleBox>
           </Box>
@@ -267,105 +263,97 @@ const Tvprogram = () => (
       </Container>
 
       <Container>
-        <StyledP>왓챠 영화 순위</StyledP>
+        <StyledP>왓챠 TV 프로그램 순위</StyledP>
         <MultiBox>
           <Box>
-            <SingleBox title="듄" href="링크">
+            <SingleBox title="최애" href="링크">
               <PosterBox>
                 <Poster>
-                  <Image
-                    src={require("../img/dune_poster.jpg").default}
-                    alt="dune_poster"
-                  />
+                  <Image src={require("../img/최애.jpg").default} alt="최애" />
                 </Poster>
                 <RankBox>1</RankBox>
               </PosterBox>
 
               <Detail>
-                <Name>듄</Name>
-                <Country>2021 ・ 한국</Country>
-                <Star>평균★3.0</Star>
-                <Ratio>예매율 18% ・ 누적 관객 1만명</Ratio>
+                <Name>최애</Name>
+                <Country>2021 ・ 일본 ・ TBS</Country>
+                <Star>평균★4.7</Star>
               </Detail>
             </SingleBox>
           </Box>
           <Box>
-            <SingleBox title="듄" href="링크">
+            <SingleBox title="며느라기" href="링크">
               <PosterBox>
                 <Poster>
                   <Image
-                    src={require("../img/dune_poster.jpg").default}
-                    alt="dune_poster"
+                    src={require("../img/며느라기.jpg").default}
+                    alt="며느라기"
                   />
                 </Poster>
                 <RankBox>2</RankBox>
               </PosterBox>
 
               <Detail>
-                <Name>듄</Name>
-                <Country>2021 ・ 한국</Country>
-                <Star>평균★3.0</Star>
-                <Ratio>예매율 18% ・ 누적 관객 1만명</Ratio>
+                <Name>며느라기 시즌 1</Name>
+                <Country>2021 ・ 한국 ・ Kakao TV</Country>
+                <Star>평균★3.9</Star>
               </Detail>
             </SingleBox>
           </Box>
           <Box>
-            <SingleBox title="듄" href="링크">
+            <SingleBox title="귀멸의칼날" href="링크">
               <PosterBox>
                 <Poster>
                   <Image
-                    src={require("../img/dune_poster.jpg").default}
-                    alt="dune_poster"
+                    src={require("../img/귀멸의칼날.jpg").default}
+                    alt="귀멸의칼날"
                   />
                 </Poster>
                 <RankBox>3</RankBox>
               </PosterBox>
 
               <Detail>
-                <Name>듄</Name>
-                <Country>2021 ・ 한국</Country>
-                <Star>평균★3.0</Star>
-                <Ratio>예매율 18% ・ 누적 관객 1만명</Ratio>
+                <Name>귀멸의 칼날: 무한열차</Name>
+                <Country>2021 ・ 일본 ・ Fuji TV</Country>
+                <Star>평균★4.6</Star>
               </Detail>
             </SingleBox>
           </Box>
           <Box>
-            <SingleBox title="듄" href="링크">
+            <SingleBox title="커피한잔할까요?" href="링크">
               <PosterBox>
                 <Poster>
                   <Image
-                    src={require("../img/dune_poster.jpg").default}
-                    alt="dune_poster"
+                    src={require("../img/커피한잔할까요.jpg").default}
+                    alt="커피한잔할까요"
                   />
                 </Poster>
                 <RankBox>4</RankBox>
               </PosterBox>
 
               <Detail>
-                <Name>듄</Name>
-                <Country>2021 ・ 한국</Country>
-                <Star>평균★3.0</Star>
-                <Ratio>예매율 18% ・ 누적 관객 1만명</Ratio>
+                <Name>커피 한잔 할까요?</Name>
+                <Country>2021 ・ 한국 ・ Kakao TV</Country>
+                <Star>평균★4.7</Star>
               </Detail>
             </SingleBox>
           </Box>
           <Box>
-            <SingleBox title="듄" href="링크">
+            <SingleBox title="더듬이TV" href="링크">
               <PosterBox>
                 <Poster>
                   <Image
-                    src={require("../img/dune_poster.jpg").default}
-                    alt="dune_poster"
+                    src={require("../img/더듬이tv.jpg").default}
+                    alt="더듬이tv"
                   />
                 </Poster>
                 <RankBox>5</RankBox>
               </PosterBox>
 
               <Detail>
-                <Name>듄</Name>
-                <Country>2021 ・ 한국</Country>
-                <Star>평균★3.0</Star>
-                <Ratio>예매율 18% ・ 누적 관객 1만명</Ratio>
+                <Name>더듬이 TV: 우당탕탕 안테나</Name>
+                <Country>2021 ・ 한국 ・ Kakao TV</Country>
+                <Star>평균★4.5</Star>
               </Detail>
             </SingleBox>
           </Box>

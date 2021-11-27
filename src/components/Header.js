@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import { useNavigate, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Nav = styled.nav`
+  z-index: 6;
   width: 100%;
   height: 62px;
   position: fixed;
@@ -78,7 +79,10 @@ const NavBody = styled.ul`
   padding-inline-start: 40px;
 `;
 
-const NavTitle = styled.li`
+const NavTitle = styled.button`
+  background: none;
+  border: none;
+  cursor: pointer;
   display: list-item;
   text-align: -webkit-match-parent;
   margin-left: 60px;
@@ -145,13 +149,19 @@ const Header = () => {
             <img src={require("../img/atcha_logo.png").default} alt="logo" />
           </NavTitle>
           <LeftMenu>
-            <Movie>영화</Movie>
+            <Movie>
+              <Link to="/">영화</Link>
+            </Movie>
           </LeftMenu>
           <LeftMenu>
-            <TvBook>TV 프로그램</TvBook>
+            <TvBook>
+              <Link to="/tvprogram">TV 프로그램</Link>
+            </TvBook>
           </LeftMenu>
           <LeftMenu>
-            <TvBook>책</TvBook>
+            <TvBook>
+              <Link to="/book">책</Link>
+            </TvBook>
           </LeftMenu>
           <Input>
             <SearchBar

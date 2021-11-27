@@ -1,10 +1,18 @@
 import React from "react";
 import "./App.css";
-// import Navbar from "./components/Navbar";
+import { Route } from "react-router-dom";
 import Movie from "./components/Movie";
+import Tvprogram from "./components/Tvprogram";
+import Book from "./components/Book";
 
 const App = () => {
-  return <Movie />;
+  return (
+    <div>
+      <Route path="/" component={Movie} exact={true} />
+      <Route path="/tvprogram" component={Tvprogram} />
+      <Route path="/book" component={Book} />
+    </div>
+  );
 };
 
 export default App;
