@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
@@ -141,26 +141,40 @@ const SearchBar = styled.input`
 }*/
 
 const Header = () => {
+  const [color, setColor] = useState("#7E7E7E");
+
+  const onClick = () => {
+    color === "#7E7E7E" ? setColor("#353535") : setColor("#7E7E7E");
+  };
+
   return (
     <header>
       <Nav>
         <NavBody>
           <NavTitle>
-            <img src={require("../img/atcha_logo.png").default} alt="logo" />
+            <Link to="/" style={{ textDecoration: "none" }}>
+              <img src={require("../img/atcha_logo.png").default} alt="logo" />
+            </Link>
           </NavTitle>
           <LeftMenu>
-            <Movie>
-              <Link to="/">영화</Link>
+            <Movie onClick={onClick}>
+              <Link to="/" style={{ textDecoration: "none" }}>
+                영화
+              </Link>
             </Movie>
           </LeftMenu>
           <LeftMenu>
-            <TvBook>
-              <Link to="/tvprogram">TV 프로그램</Link>
+            <TvBook onClick={onClick}>
+              <Link to="/tvprogram" style={{ textDecoration: "none" }}>
+                TV 프로그램
+              </Link>
             </TvBook>
           </LeftMenu>
           <LeftMenu>
-            <TvBook>
-              <Link to="/book">책</Link>
+            <TvBook onClick={onClick}>
+              <Link to="/book" style={{ textDecoration: "none" }}>
+                책
+              </Link>
             </TvBook>
           </LeftMenu>
           <Input>

@@ -163,7 +163,7 @@ const Book = () => (
 
     <Content>
       <Container>
-        <StyledP>박스오피스 순위</StyledP>
+        <StyledP>신간 베스트셀러 순위</StyledP>
         <MultiBox>
           <Box>
             <SingleBox title="듄" href="링크">
@@ -267,7 +267,7 @@ const Book = () => (
       </Container>
 
       <Container>
-        <StyledP>왓챠 영화 순위</StyledP>
+        <StyledP>책 검색 순위</StyledP>
         <MultiBox>
           <Box>
             <SingleBox title="듄" href="링크">
