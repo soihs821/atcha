@@ -10,17 +10,7 @@ OTT 서비스 중 하나인 왓챠를 React를 이용하여 클론 코딩한 사
 
 ## Install
 
-OS X & 리눅스:
 
-```sh
-yarn 
-```
-
-윈도우:
-
-```sh
-edit autoexec.bat
-```
 <br /><br />
 ## Example
 
@@ -30,13 +20,7 @@ edit autoexec.bat
 (아직 개발 중에 있는 사이트라 추후 추가해 나갈 예정입니다)
 
 <br /><br />
-## 개발 환경 설정
 
-
-```sh
-make installnpm test
-```
-<br /><br />
 ## 업데이트 내역
 
 * 0.0.1
